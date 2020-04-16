@@ -1,0 +1,85 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Poruke</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+</head>
+<body>
+<div class="control-group">
+<table id="poruka">
+	
+	
+	<tr>
+		<td>Naziv oglasa:</td>
+		<td><input type="text" id="naz_txt"></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td>Naslov poruke:</td>
+		<td><input type="text" id="naslov_txt"></td>
+	</tr>
+	
+	<tr>
+		<td>Sadrzaj poruke:</td>
+		<td><input type="text" id="sadrzaj_txt"></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td>Primaoc:</td>
+		<td><select id="sel_kor"></select></td>
+		<td><input type="submit" onclick="posaljiPoruku()"></td>
+	</tr>
+
+</table>
+
+</br>
+</br>
+
+
+<h2><font color="blue">Primljene poruke</font></h2>
+<table border="3" id="primljene" class="table">
+	<tr>
+			<th>Naziv oglasa</th>
+			<th>Posiljaoc</th>
+			<th>Naslov poruke</th>
+			<th>Sadrzaj poruke</th>
+			<th>Datum</th>
+	</tr>
+</table>
+</div>
+
+</br>
+</br>
+
+<h2><font color="green">Poslate poruke</font></h2>
+<table border="2" id="poslate" class="table">
+	
+	<tr>
+			<th>Naziv oglasa</th>
+			<th>Primalac</th>
+			<th>Naslov poruke</th>
+			<th>Sadrzaj poruke</th>
+			<th>Datum</th>
+	</tr>
+	
+	
+</table>
+
+<br/>
+<br/>
+<a href="pocetna.html">Pocetna stranica</a>
+
+
+<script src="jquery-3.3.1.min.js"></script>
+<script src="js/poruke.js"></script>
+
+</body>
+
+</html>

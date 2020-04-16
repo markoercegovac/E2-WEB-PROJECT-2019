@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Oglas</title>
+
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+<script>
+
+	src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+
+	<h1>Oglas</h1>
+	<td><input type="text" hidden="true" id="hidden_id">
+	<div class="control-group">
+		<table id="izmena_tabela">
+			<tr>
+
+				
+			</tr>
+			<tr>
+				<td>Naziv:</td>
+				<td><input type="text" id="naziv_izmena"></td>
+			</tr>
+			<tr>
+				<td><br></td>
+			</tr>
+			<tr>
+				<td><br></td>
+			</tr>
+
+			<tr>
+				<td>Cena:</td>
+				<td><input type="text" id="cena_izmena"></td>
+			</tr>
+
+			<tr>
+				<td>Opis</td>
+				<td><input type="text" id="opis_izmena"></td>
+			</tr>
+
+			<tr>
+				<td>Kategorija</td>
+				<td><select id="kat_izmena"></select></td>
+			</tr>
+			<tr>
+				<td>Datum isticanja:</td>
+				<td><input type="date" id="datum_isticanja_izmena" data-date-format="DD MMMM YYYY"></td>
+			</tr>
+
+			<tr>
+				<td>Grad:</td>
+				<td><input type="text" id="grad_izmena">
+			</tr>
+
+			<tr>
+				<td>Aktivan</td>
+				<td><input type="checkbox" id=cb_aktivan_izmena></td>
+
+			</tr>
+
+			<tr>
+				<td>Slika:</td>
+				<td><img id="image_izmena" src="" style="max-width: 200px" />
+					<input type="file" onchange="pretvoriSliku(this,'#image_izmena')"
+					accept="image/jpeg"></td>
+			</tr>
+
+			<tr>
+				<td><input type="button" value="Odustani"
+					onclick="window.location.href='prodavac.html'"></td>
+				<td></td>
+				<td><input type="submit" onclick="izmeniOglas()"
+					value="Izmeni oglas"></td>
+			</tr>
+
+
+
+		</table>
+
+	</div>
+
+	<script src="js/skripta_oglasi.js"></script>
+	<script src="jquery-3.3.1.min.js"></script>
+</body>
+</html>

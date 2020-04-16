@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Korisnička stranica</title>
+
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+</head>
+<body>
+
+
+<h1>Korisnička stranica</h1>
+
+<nav class="navbar navbar-dark bg-dark">
+		<h2>
+			<a href="poruke.html" class="text-white">Poruke</a>
+		</h2>
+		
+		
+		<a href="pocetna.html">Pocetna stranica</a>
+	</nav>
+<br/>
+<br/>
+<h2>Istorija oglasa<div style="background-color:green">DOSTAVLJENO</div></h2>
+
+
+
+
+<table id="dostavljeni" class="table" >
+	<tr>
+		<th>Naziv</th>
+		<th>Cena</th>
+		<th>Opis</th>
+		<th>Broj pozitivnih ocena("lajkova")</th>
+		<th>Broj negativnih ocena("dislajkova")</th>
+		<th>Slika</th>
+		<th>Datum postavljanja</th>
+		<th>Datum isticanja</th>
+		<th>Da li je aktivan</th>
+		<th>Lista recenzija</th>
+		<th>Grad</th>
+	</tr>
+</table>
+<br>
+<h2>Istorija oglasa<div style="background-color:orange;">U REALIZACIJI</div></h2>
+
+<table id="u_realizaciji" class="table">
+	<tr>
+		<th>Naziv</th>
+		<th>Cena</th>
+		<th>Opis</th>
+		<th>Broj pozitivnih ocena("lajkova")</th>
+		<th>Broj negativnih ocena("dislajkova")</th>
+		<th>Slika</th>
+		<th>Datum postavljanja</th>
+		<th>Datum isticanja</th>
+		<th>Da li je aktivan</th>
+		<th>Lista recenzija</th>
+		<th>Grad</th>
+	</tr>
+</table>
+
+<br>
+
+<h2 ><font size="3" color="blue" class="table">Omiljeni oglasi</font></h2>
+
+<table id="omiljeni" border="2">
+	<tr>
+		<th>Naziv</th>
+		<th>Cena</th>
+		<th>Opis</th>
+		<th>Grad</th>
+	</tr>
+</table>
+<table id="recenzije" class="table">
+	<tr>
+		
+		<th>Naslov recenzije</th>
+		<th>Sadrzaj</th>
+		<th>Slika</th>
+	
+	</tr>
+
+</table>
+
+
+<br>
+<br>
+
+
+<script src="jquery-3.3.1.min.js"></script>
+<script src="js/kupac.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Oglas</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+
+</head>
+<body>
+
+	<h1>Oglas</h1>
+
+	<div class="control-group">
+		<table id="naziv_tabela">
+			<tr>
+
+				<td><input type="text" hidden="true">
+			</tr>
+
+
+			<tr>
+				<td>Naziv:</td>
+				<td><input type="text" id="naziv_text"></td>
+			</tr>
+			<tr>
+				<td><br></td>
+			</tr>
+			<tr>
+				<td><br></td>
+			</tr>
+
+			<tr>
+				<td>Cena:</td>
+				<td><input type="text" id="cena_text"></td>
+			</tr>
+
+			<tr>
+				<td>Opis</td>
+				<td><input type="text" id="opis_text"></td>
+			</tr>
+
+			<tr>
+				<td>Kategorija</td>
+				<td><select id="kat"></select></td>
+			</tr>
+
+			<tr>
+				<td>Postavljen:</td>
+
+
+				<td><script>
+					var currentDate = new Date(), day = currentDate.getDate(), month = currentDate
+							.getMonth() + 1, year = currentDate.getFullYear();
+					document.write(day + "-" + month + "-" + year)
+				</script></td>
+			</tr>
+
+			<tr>
+				<td>Datum isticanja:</td>
+				<td><input type="date" id="datum_isticanja" data-date-format="DD MMMM YYYY"></td>
+			</tr>
+			<tr>
+				<td>Grad:</td>
+				<td><input type="text" id="grad_text">
+			</tr>
+			<tr>
+				<td>Aktivan</td>
+				<td><input type="checkbox" id=cb_aktivan></td>
+
+			</tr>
+
+
+			<tr>
+				<td>Slika:</td>
+				<td><img id="image" src="" style="max-width: 200px" /> <input
+					type="file" onchange="pretvoriSliku(this,'#image')"
+					accept="image/jpeg"></td>
+			</tr>
+
+			<tr>
+				<td><input type="button" value="Odustani"
+					onclick="window.location.href='prodavac.html'"></td>
+				<td></td>
+				<td><input type="submit" onclick="dodajOglas()"
+					value="Dodaj oglas"></td>
+			</tr>
+
+
+
+		</table>
+
+	</div>
+
+	<script src="js/skripta_oglasi.js"></script>
+	<script src="jquery-3.3.1.min.js"></script>
+</body>
+</html>

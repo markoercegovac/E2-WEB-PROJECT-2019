@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Kategorije</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+
+</head>
+<body>
+	<h1>Kategorije</h1>
+	<div class="control-group">
+		<table>
+
+			<tr>
+				<td>Naziv:</td>
+				<td><input type="text" id="txt_naziv"></td>
+
+			</tr>
+
+			<tr>
+				<td>Opis:</td>
+				<td><input type="text" id="txt_opis"></td>
+			</tr>
+
+			<tr>
+				<td><input type="button" value="Odustani"
+					onclick="window.location.href='administrator.html'"></td>
+				<td></td>
+				<td><input type="submit" onclick="napraviKategoriju()"
+					value="Dodaj kategoriju"></td>
+
+			</tr>
+
+		</table>
+	</div>
+	<script src="js/kategorije.js"></script>
+	<script src="jquery-3.3.1.min.js"></script>
+</body>
+</html>

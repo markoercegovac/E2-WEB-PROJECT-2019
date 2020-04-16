@@ -1,0 +1,64 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Recenzija</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+</head>
+
+<body>
+<h1>Recenzija</h1>
+<div class="control-group">
+<table id="recenzija">
+
+	
+	
+	
+	
+	<tr>
+		<td>Naslov recenzije</td>
+		<td><input type="text" id="nasolv_txt"></td>
+	</tr>
+	<tr>
+		<td>Sadrzaj</td>
+		<td><input type="text" id="sadrzaj_txt"></td>
+	</tr>
+	
+	<tr>
+		<td>Da li je opis iz oglasa tacan</td>
+		<td><input type="checkbox" id="opis_cb"></td>
+	
+	</tr>
+	<tr>
+		<td>Da li je ispostovan dogovor</td>
+		<td><input type="checkbox" id="dogovor_cb"></td>
+	</tr>
+	<tr>
+		<td>Slika:</td>
+		<td><img id="image" src="" style="max-width:200px"/>
+			<input type="file" 
+    		onchange="pretvoriSliku(this,'#image')" accept="image/jpeg">
+			
+		</td>
+	</tr>
+	
+	
+	<tr>
+		<td><input type="button" value="Odustani" onclick="window.location.href='kupac.html'"></td>
+		<td></td>
+		<td><input type="submit" onclick="dodajRecenziju()" ></td>
+	</tr>
+</table>
+</div>
+<script src="js/recenzije.js"></script>
+<script src="jquery-3.3.1.min.js"></script>
+
+</body>
+
+
+
+
+
+</html>

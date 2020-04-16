@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link
+	href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css"
+	rel="stylesheet" id="bootstrap-css">
+<script
+	src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<meta charset="utf-8">
+<title>Registracija</title>
+</head>
+<body>
+	<h1 class="h1">Registracija</h1>
+
+
+
+	<div class"text-center">
+		<div class="control-group">
+			<table>
+
+				<tr>
+					<td>Korisničko ime</td>
+					<td><input type="text" id="korisnik_text" class="input-xlarge"></td>
+				</tr>
+
+				<tr>
+					<td>Lozinka</td>
+					<td><input type="password" id="lozinka_text"></td>
+				</tr>
+
+				<tr>
+					<td>Ime</td>
+					<td><input type="text" id="ime_text"></td>
+				</tr>
+
+				<tr>
+					<td>Prezime</td>
+					<td><input type="text" id="prezime_text"></td>
+				<tr>
+				<tr>
+					<td>Uloga</td>
+					<td><select id="uloga_sel">
+							<option>Kupac</option>
+					</select></td>
+				</tr>
+
+				<tr>
+					<td>Kontakt telefon</td>
+					<td><input type="text" id="telefon_text"></td>
+				</tr>
+
+				<tr>
+					<td>Grad</td>
+					<td><input type="text" id="grad_text"></td>
+				</tr>
+
+				<tr>
+					<td>Email adresa</td>
+					<td><input type="text" id="email_text"></td>
+				</tr>
+
+				<tr>
+					<td>Datum registracije</td>
+
+					<td><script>
+						var currentDate = new Date(), day = currentDate
+								.getDate(), month = currentDate.getMonth() + 1, year = currentDate
+								.getFullYear();
+						document.write(day + "/" + month + "/" + year)
+					</script></td>
+				</tr>
+				<tr>
+					<td><input type="submit" onclick="registracijaKorisnika()"
+						value="Registruj se"></td>
+
+				</tr>
+
+			</table>
+		</div>
+		<a href="login.html">Pocetna stranica</a>
+	</div>
+
+	<script src="jquery-3.3.1.min.js"></script>
+	<script src="js/registracija.js"></script>
+</body>
+</html>
